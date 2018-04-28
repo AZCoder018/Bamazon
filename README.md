@@ -2,7 +2,7 @@
 
 #### __WHAT DOES THIS APP DO?__
 
-Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL database to keep track of orders and store inventory. This version of Bamazon has the 'Customer View' feature. 'Customer View' provides the customer with a price list of items currently in Bamazon inventory; takes in orders from customers; depletes stock from the store's inventory when an order is placed; and informs the customer of the total cost of the order. The MySQL database is updated when orders are successfully placed;
+Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL database to keep track of orders and store inventory. This version of Bamazon has the 'Customer View' feature. 'Customer View' provides the customer with a price list of items currently in Bamazon inventory; takes in orders from customers; depletes stock from the store's inventory when an order is placed; and informs the customer of the total cost of the order. The MySQL database is updated when orders are successfully placed.
 
 #### __HOW DO YOU GET STARTED?__
 
@@ -22,28 +22,39 @@ Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL
 
 4. Test your MySQL Local Connection; if you cannot establish a connection, see a teacher, TA or tutor for help.
 
-5. Using Visual Studio Code and include your MySQL password on the following lines, of the following files: 
-
-    - bamazonCustomer.js, line 11
-    - bamazonManager.js, line
-    - bamazonSupervisor.js, line
+5. Using Visual Studio Code, open file bamazonCustomer.js in the Bamazon folder and include your MySQL password on line 11 of the bamazonCustomer.js file. 
 
 6. Exit Visual Studio Code.
 
 7. Make sure that you have node.js installed on your computer.
 
-8. Open GitBash or Terminal, making sure that you are in the file location of Bamazon, and run command 'npm install', to complete installation (all necessary apis from npm.js will be downloaded and installed). 
+8. Open GitBash or Terminal, making sure that you are in the file directory location of Bamazon, and run command 'npm install', to complete installation (all necessary apis from npm.js will be downloaded and installed). 
 
 #### __HOW DOES BAMAZON 'CUSTOMER VIEW' WORK?__
 
+1. Use GitBash or Terminal to navigate to the file location of Bamazon. You can then enter on the command line 'node bamazonCustomer.js'. The "Existing Amazon Inventory" list will appear, followed by a prompt, requiring you to enter an Item ID from the list. See Image 1, below.
+
+__Image 1__
+
 ![Enter Item ID](images/EnterItemID.png)
+
+2. Select an Item ID from the list, and then press 'enter'. Another prompt will appear, asking you to then select how many of the selected Item you would like to order. You should not order more than the quantity remaining in inventory. Type an appropriate number and press 'enter'. See Image 2, below.
+
+__Image 2__
 
 ![Select Quantity](images/SelectQuantity.png)
 
-![Insufficient Quantity](images/InsufficientQuantity.png)
+3. If the number of items you ordered were in stock, messages will appear informing you: (i) that your items were in stock; (ii) that your order was placed; (iii) the total cost of your order; and (iv) thanking you for shopping with Bamazon. See Image 3, below.
+
+__Image 3__
 
 ![Completed Order](images/CompletedOrder.png)
 
+4. If you try to order a quanitity of items that is not in stock, you will be advised that there is an insufficient quantity to complete your order. You will receive a message advising you to enter an appropriate number or to select a different Item. See the top of Image 4, below.
+
+__Image 4__
+
+![Insufficient Quantity](images/InsufficientQuantity.png)
 
 #### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF BAMAZON?__
 
