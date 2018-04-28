@@ -2,17 +2,44 @@
 
 #### __WHAT DOES THIS APP DO?__
 
-WordGuess-CLI is a command line node game app that is similar to hangman. This current configuration of WordGuess-CLI involves world capitals. The app randomly choses a world capital from a word bank of 30 world capitals and then displays on the command line the redacted world capital, with each letter of the world capital represented by a blank underscore. For example, if the app randomly choses 'Zurich' as a world capital, 'Zurich' will appear as '_ _ _ _ _ _' on the command line. The user must then guess each of the missing letters contained within the randomly chosen world capital. If the player guesses a correct letter, that letter will appear in place of the appropriate underscore on the command line. If the randomly chosen capital is 'Zurich', and the user correctly guesses 'Z',  the letter 'Z' will appear as 'Z _ _ _ _' on the command line. If the player makes 12 incorrect guesses, the player loses the game. 
+Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL database to keep track of orders and store inventory. This version of Bamazon has three (3) features: 
+
+1. 'Customer View' provides the customer with a price list of items currently in Bamazon inventory; takes in orders from customers; depletes stock from the store's inventory when an order is placed; and informs the customer of the total cost of the order. The MySQL database is updated when orders are successfully placed;
+
+2. 'Manager View' provides a menu from which the Bamazon manager or supervisor may choose one (1) of the following four (4) options:
+
+  - View Products for Sale, which lists every available item: the item IDs, names, prices, and quantities;
+  - View Low Inventory, which lists all items with an inventory count lower than 5;
+  - Add to Inventory, which displays a prompt that will let the manager or supervisor "add more" of any item currently in the store; and
+  - Add New Product, which allows the manager or supervisor to add a completely new product to the store.
+
+3. 'Supervisor View' provides a menu from which the manager or supervisor may choose one (1) of the following two(2) options:
+
+  - View Product Sales by Department, which provides the manager or supervisor with a summarized five (5) column table in the bash window, listing:
+    - Department ID;
+    - Department Name;
+    - Over Head Costs;
+    - Product Sales; and
+    - Total Profit [which is calculated on-the-fly, using the difference between Over Head Costs and Total Sales]; 
+  - Create a New Department, which allows the manager or supervisor to add a new Bamazon Department Name.
 
 #### __HOW DO YOU GET STARTED?__
 
-1. Make sure that you have node.js installed on your computer.
+1. Make sure that you have MySQL Workbench installed on your computer.
 
-2. Clone or download the repository for WordGuess-CLI.
+2. Create a server on your computer using MySQL Workbench. 
 
-3. Open GitBash or Terminal, making sure that you are in the file location of WordGuess-CLI, and run command 'npm install', to complete installation (all necessary apis from npm.js will be downloaded and installed). 
+3. 
 
-#### __HOW DOES WordGuess-CLI WORK?__
+4. 
+
+5. Make sure that you have node.js installed on your computer.
+
+6. Clone or download the repository for Bamazon.
+
+7. Open GitBash or Terminal, making sure that you are in the file location of Bamazon, and run command 'npm install', to complete installation (all necessary apis from npm.js will be downloaded and installed). 
+
+#### __HOW DOES BAMAZON 'CUSTOMER VIEW' WORK?__
 
 * Use GitBash or Terminal to navigate to the file location of WordGuess-CLI. You can then enter on the command line 'node index.js'. 
 
@@ -27,6 +54,10 @@ WordGuess-CLI is a command line node game app that is similar to hangman. This c
 
 * Regardless of whether the user wins or loses, the user will be asked is the user wants to play again. If the user answers Y, the game resets and a new random word is chosen by the computer. If the user answers N, the user will receive the message "BYE! BYE!".
 
-#### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF WordGuess-CLI?__
+#### __HOW DOES BAMAZON 'MANAGER VIEW' WORK?__
 
-This version of WordGuess-CLI was created by me, Jason Heath Meadows, Esq., currently a student at the University of Arizona Coding Boot Camp, in Gilbert, Arizona. I will maintain and contribute to this app, as necessary, as part of my Portfolio.
+#### __HOW DOES BAMAZON 'SUPERVISOR VIEW' WORK?__
+
+#### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF BAMAZON?__
+
+This version of Bamazon was created by me, Jason Heath Meadows, Esq., currently a student at the University of Arizona Coding Boot Camp, in Gilbert, Arizona. I will maintain and contribute to this app, as necessary, as part of my Portfolio.
