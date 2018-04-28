@@ -1,36 +1,8 @@
-#### BAMAZON
+#### BAMAZON CLI NODE APPLICATION
 
 #### __WHAT DOES THIS APP DO?__
 
-Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL database to keep track of orders and store inventory. This version of Bamazon has three (3) features: 
-
-1. 'Customer View' provides the customer with a price list of items currently in Bamazon inventory; takes in orders from customers; depletes stock from the store's inventory when an order is placed; and informs the customer of the total cost of the order. The MySQL database is updated when orders are successfully placed;
-
-2. 'Manager View' provides a menu from which the Bamazon manager or supervisor may choose one (1) of the following four (4) options:
-
-    - View Products for Sale, which lists every available item: the item IDs, names, prices, and quantities;
-
-    - View Low Inventory, which lists all items with an inventory count lower than 5;
-
-    - Add to Inventory, which displays a prompt that will let the manager or supervisor "add more" of any item currently in the store; and
-
-    - Add New Product, which allows the manager or supervisor to add a completely new product to the store.
-
-3. 'Supervisor View' provides a menu from which the manager or supervisor may choose one (1) of the following two(2) options:
-
-  - View Product Sales by Department, which provides the manager or supervisor with a summarized five (5) column table in the bash window, listing:
-
-      - Department ID;
-
-      - Department Name;
-
-      - Over Head Costs;
-
-      - Product Sales; and
-
-     - Total Profit [which is calculated on-the-fly, using the difference between Over Head Costs and Total Sales]; 
-
-  - Create a New Department, which allows the manager or supervisor to add a new Bamazon Department Name.
+Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL database to keep track of orders and store inventory. This version of Bamazon has the 'Customer View' feature. 'Customer View' provides the customer with a price list of items currently in Bamazon inventory; takes in orders from customers; depletes stock from the store's inventory when an order is placed; and informs the customer of the total cost of the order. The MySQL database is updated when orders are successfully placed;
 
 #### __HOW DO YOU GET STARTED?__
 
@@ -76,10 +48,6 @@ Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL
   - It is not necessary for the user to capitalize guesses.
 
 * Regardless of whether the user wins or loses, the user will be asked is the user wants to play again. If the user answers Y, the game resets and a new random word is chosen by the computer. If the user answers N, the user will receive the message "BYE! BYE!".
-
-#### __HOW DOES BAMAZON 'MANAGER VIEW' WORK?__
-
-#### __HOW DOES BAMAZON 'SUPERVISOR VIEW' WORK?__
 
 #### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF BAMAZON?__
 

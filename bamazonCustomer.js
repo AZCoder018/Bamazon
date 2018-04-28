@@ -14,7 +14,7 @@ var connection = mysql.createConnection({
 
 // Validate input, so that user can only enter positive whole numbers, and cannot enter zero
 function validateInput(value) {
-	var integer = Number.isInteger(parseFloat(value));
+	var integer = Number.isInteger(parseInt(value));
 	var sign = Math.sign(value);
 
 	if (integer && (sign === 1)) {
@@ -80,8 +80,8 @@ function promptUserPurchase() {
 				connection.end();
 			})
 				} else {
-					console.log('Sorry, there is insufficent quantity of the item you ordered in stock your order can not be placed as is.');
-					console.log('Please modify your order.');
+					console.log("Sorry, there is insufficent quantity of the item you ordered in stock. Your order cannot be completed.");
+					console.log("Please modify your order by selecting a lesser quantity of your desired item, or choose a different item.");
 					console.log("\n=================================================\n");
 
 					displayInventory();
