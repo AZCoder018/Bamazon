@@ -18,3 +18,20 @@ connection.connect(function(err){
 });
 
 //Display all available items in store
+function showItems(){
+    connection.query('SELECT * FROM products', function(err, res) {
+        if (err) throw err;
+        console.log("=================================================");
+        console.log("=================Items in Store==================");   
+        console.log("=================================================");
+
+        for(i=0; i<res.length; i++) {
+            console.log()
+
+        }
+    )
+
+
+    })
+
+}
