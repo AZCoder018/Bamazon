@@ -8,36 +8,59 @@ Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL
 
 2. 'Manager View' provides a menu from which the Bamazon manager or supervisor may choose one (1) of the following four (4) options:
 
-  - View Products for Sale, which lists every available item: the item IDs, names, prices, and quantities;
-  - View Low Inventory, which lists all items with an inventory count lower than 5;
-  - Add to Inventory, which displays a prompt that will let the manager or supervisor "add more" of any item currently in the store; and
-  - Add New Product, which allows the manager or supervisor to add a completely new product to the store.
+    - View Products for Sale, which lists every available item: the item IDs, names, prices, and quantities;
+
+    - View Low Inventory, which lists all items with an inventory count lower than 5;
+
+    - Add to Inventory, which displays a prompt that will let the manager or supervisor "add more" of any item currently in the store; and
+
+    - Add New Product, which allows the manager or supervisor to add a completely new product to the store.
 
 3. 'Supervisor View' provides a menu from which the manager or supervisor may choose one (1) of the following two(2) options:
 
   - View Product Sales by Department, which provides the manager or supervisor with a summarized five (5) column table in the bash window, listing:
-    - Department ID;
-    - Department Name;
-    - Over Head Costs;
-    - Product Sales; and
-    - Total Profit [which is calculated on-the-fly, using the difference between Over Head Costs and Total Sales]; 
+
+      - Department ID;
+
+      - Department Name;
+
+      - Over Head Costs;
+
+      - Product Sales; and
+
+     - Total Profit [which is calculated on-the-fly, using the difference between Over Head Costs and Total Sales]; 
+
   - Create a New Department, which allows the manager or supervisor to add a new Bamazon Department Name.
 
 #### __HOW DO YOU GET STARTED?__
 
-1. Make sure that you have MySQL Workbench installed on your computer.
+1. Clone or download the repository for Bamazon.
 
-2. Create a server on your computer using MySQL Workbench. 
+2. Make sure that you have MySQL Workbench installed on your computer.
 
-3. 
+3. Create a server on your computer using MySQL Workbench and the Bamazon.sql file provided in the Bamazon repository folder which you have downloaded from GitHub:
 
-4. 
+    - Set up a local connection as follows:
+          - Connection Name: Local Connection
+          - Connection Method: Standard (TCP/IP)
+          - Hostname: localhost
+          - Port: 3306
+          - Username: root
+   - Click 'Store in Vault' and set your password if you don't have one; Leave Default Schema blank
 
-5. Make sure that you have node.js installed on your computer.
+4. Test your MySQL Local Connection; if you cannot establish a connection, see a teacher, TA or tutor for help.
 
-6. Clone or download the repository for Bamazon.
+5. Using Visual Studio Code and include your MySQL password on the following lines, of the following files: 
 
-7. Open GitBash or Terminal, making sure that you are in the file location of Bamazon, and run command 'npm install', to complete installation (all necessary apis from npm.js will be downloaded and installed). 
+    - bamazonCustomer.js, line 11
+    - bamazonManager.js, line
+    - bamazonSupervisor.js, line
+
+6. Exit Visual Studio Code.
+
+7. Make sure that you have node.js installed on your computer.
+
+8. Open GitBash or Terminal, making sure that you are in the file location of Bamazon, and run command 'npm install', to complete installation (all necessary apis from npm.js will be downloaded and installed). 
 
 #### __HOW DOES BAMAZON 'CUSTOMER VIEW' WORK?__
 
