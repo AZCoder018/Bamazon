@@ -32,7 +32,7 @@ Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL
 
 #### __HOW DOES BAMAZON 'CUSTOMER VIEW' WORK?__
 
-1. Use GitBash or Terminal to navigate to the file location of Bamazon. You can then enter on the command line 'node bamazonCustomer.js'. The "Existing Amazon Inventory" list will appear, followed by a prompt, requiring you to enter an Item ID from the list. See Image 1, below.
+1. Use GitBash or Terminal to navigate to the file location of Bamazon. You can then enter on the command line 'node bamazonCustomer.js'. The "Existing Bamazon Inventory" list will appear, followed by a prompt, requiring you to enter an Item ID from the list. See Image 1, below.
 
 __Image 1__
 
@@ -55,6 +55,8 @@ __Image 3__
 __Image 4__
 
 ![Insufficient Quantity](images/InsufficientQuantity.png)
+
+*Note that once a certain quantity of an Item has been purchased, the Quantity in Stock for that Item will be reduced accordingly, and the change will be reflected on the "Existing Bamazon Inventory" list the next time you make an order. For example, notice when comparing Images 3 and 4, above, the Quantity in Stock for Mens Work Boots went from 4 to 0, after successfully purchasing the 4 remaining Mens Work Boots in stock. 
 
 #### __WHO MAINTAINS AND CONTRIBUTES TO THIS VERSION OF BAMAZON?__
 
