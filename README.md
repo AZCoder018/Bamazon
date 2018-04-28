@@ -38,6 +38,14 @@ Bamazon is an Amazon-like storefront CLI node application which utilizes a MySQL
 
 * Use GitBash or Terminal to navigate to the file location of WordGuess-CLI. You can then enter on the command line 'node index.js'. 
 
+![Enter Item ID](screenshots/Enter Item ID.png)
+
+![Select Quantity](screenshots/Select Quantity.png)
+
+![Insufficient Quantity](screenshots/Insufficient Quantity.png)
+
+![Completed Order](screenshots/Completed Order.png)
+
 * Directions for playing WordGuess-CLI:
 
   - The computer will randomly choose a world capital.

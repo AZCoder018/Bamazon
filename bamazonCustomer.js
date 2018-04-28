@@ -1,15 +1,15 @@
 
 // Pull in dependencies
-var inquirer = require('inquirer');
-var mysql = require('mysql');
+var inquirer = require("inquirer");
+var mysql = require("mysql");
 
 // MySQL connection parameters
 var connection = mysql.createConnection({
-	host: 'localhost',
+	host: "localhost",
 	port: 3306,
-	user: 'root',
-	password: 'DrPepper',
-	database: 'Bamazon'
+	user: "root",
+	password: "DrPepper",
+	database: "Bamazon"
 });
 
 // Validate input, so that user can only enter positive whole numbers, and cannot enter zero
@@ -28,15 +28,15 @@ function validateInput(value) {
 function promptUserPurchase() {
 	inquirer.prompt([
 		{
-			type: 'input',
-			name: 'item_id',
+			type: "input",
+			name: "item_id",
 			message: "Please enter the Item ID for the item you would like to order.",
 			validate: validateInput,
 			filter: Number
 		},
 		{
-			type: 'input',
-			name: 'quantity',
+			type: "input",
+			name: "quantity",
 			message: "How many of the selected item would you like to order?",
 			validate: validateInput,
 			filter: Number
@@ -55,7 +55,7 @@ function promptUserPurchase() {
 // If the user selects an invalid item ID, return that user must select a valid Item ID
 		
 			if (data.length === 0) {
-				console.log('ERROR: Invalid Item ID. Please select a valid Item ID.');
+				console.log("ERROR: Invalid Item ID. Please select a valid Item ID.");
 				displayInventory();
 
 			} else {
@@ -72,7 +72,7 @@ function promptUserPurchase() {
 				connection.query(updateQueryStr, function(err, data) {
 					if (err) throw err;
 
-					console.log("Your order has been placed. Your total is $" + productData.price * quantity);
+					console.log("Your order has been placed. Your total is $" + productData.price * quantity + ".");
 					console.log("Thank you for shopping with Bamazon.");
 					console.log("\n=================================================\n");
 
@@ -101,16 +101,17 @@ function displayInventory() {
 	connection.query(queryStr, function(err, data) {
 		if (err) throw err;
 
-		console.log('EXISTING BAMAZON INVENTORY: ');
+		console.log("EXISTING BAMAZON INVENTORY: ");
 		console.log("=================================================\n");
 
 		var strOut = '';
 		for (var i = 0; i < data.length; i++) {
 			strOut = '';
-			strOut += 'Item ID: ' + data[i].item_id + '  ||  ';
-			strOut += 'Product Name: ' + data[i].product_name + '  ||  ';
-			strOut += 'Department: ' + data[i].department_name + '  ||  ';
-			strOut += 'Price: $' + data[i].price + '\n';
+			strOut += "Item ID: " + data[i].item_id + "  ||  ";
+			strOut += "Product Name: " + data[i].product_name + "  ||  ";
+			strOut += "Department: " + data[i].department_name + "  ||  ";
+			strOut += "Price: $" + data[i].price + " || ";
+			strOut += "(Quantity in stock: " + data[i].stock_quantity + ")\n";
 
 			console.log(strOut);
 		}
