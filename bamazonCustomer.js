@@ -26,12 +26,9 @@ function showItems(){
         console.log("=================================================");
 
         for(i=0; i<res.length; i++) {
-            console.log()
-
+            console.log("Item ID: " + res[i].id + "Product Name: " + res[i].PRODUCT_NAME + "Price: " + "$" + res[i].PRICE + "(Quantity left: " + res[i].STOCK_QUANTITY + ")")
         }
-    )
-
-
+         console.log("==================================================");
+        placeOrder();
     })
-
 }
